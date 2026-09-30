@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Environment Variables & Sensitive Credentials
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# Uploaded Files & Temporary Assets
+backend/uploads/*
+!backend/uploads/.gitkeep
+*.pdf
+test_scholarship.pdf
+
+# Production Builds
+dist/
+build/
+*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System & IDE files
+.DS_Store
+.vscode/
+.idea/
+
+# Local compiled extensions
+backend/pgvector/
